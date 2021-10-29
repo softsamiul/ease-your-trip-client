@@ -1,9 +1,20 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useHistory, useLocation } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth/useAuth';
 const Login = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
+    const history = useHistory();
+    const location = useLocation();   
+    const redirect_uri = location.state?.from || '/home';
+
+    const signIn = () => {
+        signInUsingGoogle()
+        .then(result => {
+            history.push(redirect_uri);
+        })
+    }
+
     const {signInUsingGoogle} = useAuth();
     const onSubmit = data => {
         const {email, password} = data;
@@ -40,7 +51,7 @@ const Login = () => {
                     <div>
                         <div className="flex items-center justify-center border border-1-blue p-1 text-center cursor-pointer" >
                             {/* <img className="w-5 h-5 text-right" src={googleIcon} alt="" />  */}
-                            <button onClick={signInUsingGoogle} className=" text-left text-lg font-base ml-1.5">Sign In</button>
+                            <button onClick={signIn} className=" text-left text-lg font-base ml-1.5">Sign In</button>
                         </div>
                     </div>
                 </div>

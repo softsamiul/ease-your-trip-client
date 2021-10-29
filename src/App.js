@@ -2,14 +2,18 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 import AuthProvider from './context/AuthProvider/AuthProvider';
 import About from './pages/About/About';
+import AddNewTrips from './pages/AddNewTrip/AddNewTrips';
 import Contact from './pages/Contact/Contact';
 import Home from './pages/Home/Home';
+import ManageAllTrips from './pages/ManageAllTrips/ManageAllTrips';
+import MyTrips from './pages/MyTrips/MyTrips';
 import NotFound from './pages/NotFound/NotFound';
 import ProcessingBooking from './pages/ProcessingBooking/ProcessingBooking';
 import ServiceDetails from './pages/ServiceDetails/ServiceDetails';
 import Footer from './shared/Footer/Footer';
 import Header from './shared/Header/Header';
 import Login from './shared/Login/Login';
+import PrivateRoute from './shared/PrivateRoute/PrivateRoute';
 import Services from './shared/Services/Services';
 
 function App() {
@@ -31,9 +35,9 @@ function App() {
               <Route  path="/services">
                 <Services></Services>
               </Route>
-              <Route  path="/processbooking/:id">
+              <PrivateRoute  path="/processbooking/:id">
                 <ProcessingBooking></ProcessingBooking>
-              </Route>
+              </PrivateRoute>
               <Route path="/contact">
                 <Contact></Contact>
               </Route>
@@ -42,6 +46,15 @@ function App() {
               </Route>
               <Route path="/signin">
                 <Login></Login>
+              </Route>
+              <Route path="/mytrips">
+                <MyTrips></MyTrips>
+              </Route>
+              <Route path="/managealltrips">
+                <ManageAllTrips></ManageAllTrips>
+              </Route>
+              <Route path="/addnewtrip">
+                <AddNewTrips></AddNewTrips>
               </Route>
               <Route path="*">
                 <NotFound></NotFound>

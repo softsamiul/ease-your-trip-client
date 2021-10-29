@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 const Service = ({service}) => {
     const {name, desc, _id} = service;
-    console.log(_id);
     
     // const history = useHistory();
     // const goToDetailsPage = (id) => {
