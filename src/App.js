@@ -5,6 +5,8 @@ import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import Home from './pages/Home/Home';
 import NotFound from './pages/NotFound/NotFound';
+import ProcessingBooking from './pages/ProcessingBooking/ProcessingBooking';
+import ServiceDetails from './pages/ServiceDetails/ServiceDetails';
 import Footer from './shared/Footer/Footer';
 import Header from './shared/Header/Header';
 import Login from './shared/Login/Login';
@@ -23,8 +25,14 @@ function App() {
               <Route  path="/home">
                 <Home></Home>
               </Route>
+              <Route exact  path="/servicedetails/:id">
+                <ServiceDetails></ServiceDetails>
+              </Route>
               <Route  path="/services">
                 <Services></Services>
+              </Route>
+              <Route  path="/processbooking/:id">
+                <ProcessingBooking></ProcessingBooking>
               </Route>
               <Route path="/contact">
                 <Contact></Contact>
