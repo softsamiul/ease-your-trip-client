@@ -1,65 +1,56 @@
 [
   {
-    "name": "Goa",
-    "price": "399",
+    "name": "Kolkata City Tour",
+    "price": "9999",
     "rating": "4.5",
     "persons": "2",
     "days": "3",
-    "thumbnail": "https://lh3.googleusercontent.com/proxy/a91Vdw2t-4TMTs-G61hml4wKf02NTjYGMI_bh9hfyg4T4mTf_74zkYsJo7w-saKlUQHpI3z5GmxNpQWavXI0jiEHE11UEWolOEmZzGPsUOEMNRdOGpuo6D56awlW5MxSt5Ws1D1XVzgFQOSsWw",
-    "desc": "Goa is a state in western India with coastlines stretching along the Arabian Sea. Its long history as a Portuguese colony prior to 1961 is evident in its preserved 17th-century churches and the area’s tropical spice plantations. Goa is also known for its beaches, ranging from popular stretches at Baga and Palolem to those in laid-back fishing villages such as Agonda."
+    "thumbnail": "https://i.ibb.co/Q8RmJyL/kolkata.jpg",
+    "desc": "Kolkata (formerly Calcutta) is the capital of India's West Bengal state. Founded as an East India Company trading post, it was India's capital under the British Raj from 1773–1911. Today it’s known for its grand colonial architecture, art galleries and cultural festivals. It’s also home to Mother House, headquarters of the Missionaries of Charity, founded by Mother Teresa, whose tomb is on site."
   },
   {
-    "name": "Hazarduari Palace",
-    "price": "399",
+    "name": "Murshidabad, Hazarduari Palace",
+    "price": "4999",
     "rating": "4.5",
     "persons": "2",
-    "days": "3",
-    "thumbnail": "https://lh3.googleusercontent.com/proxy/a91Vdw2t-4TMTs-G61hml4wKf02NTjYGMI_bh9hfyg4T4mTf_74zkYsJo7w-saKlUQHpI3z5GmxNpQWavXI0jiEHE11UEWolOEmZzGPsUOEMNRdOGpuo6D56awlW5MxSt5Ws1D1XVzgFQOSsWw",
-    "desc": "Goa is a state in western India with coastlines stretching along the Arabian Sea. Its long history as a Portuguese colony prior to 1961 is evident in its preserved 17th-century churches and the area’s tropical spice plantations. Goa is also known for its beaches, ranging from popular stretches at Baga and Palolem to those in laid-back fishing villages such as Agonda."
+    "days": "2",
+    "thumbnail": "https://i.ibb.co/qrT7Qfy/murshidabad.jpg",
+    "desc": "Murshidabad is a historical city in the Indian state of West Bengal. It is located on the eastern bank of the Bhagirathi River, a distributary of the Ganges River. It forms part of the Murshidabad district. During the 18th-century, Murshidabad was a prosperous city."
   },
   {
-    "name": "Digha Trip",
-    "price": "399",
-    "rating": "4.5",
+    "name": "Darjeeling Hill Tour",
+    "price": "11999",
+    "rating": "4.8",
     "persons": "2",
-    "days": "3",
-    "thumbnail": "https://lh3.googleusercontent.com/proxy/a91Vdw2t-4TMTs-G61hml4wKf02NTjYGMI_bh9hfyg4T4mTf_74zkYsJo7w-saKlUQHpI3z5GmxNpQWavXI0jiEHE11UEWolOEmZzGPsUOEMNRdOGpuo6D56awlW5MxSt5Ws1D1XVzgFQOSsWw",
-    "desc": "Goa is a state in western India with coastlines stretching along the Arabian Sea. Its long history as a Portuguese colony prior to 1961 is evident in its preserved 17th-century churches and the area’s tropical spice plantations. Goa is also known for its beaches, ranging from popular stretches at Baga and Palolem to those in laid-back fishing villages such as Agonda."
+    "days": "5",
+    "thumbnail": "https://i.ibb.co/7rNSw1C/Darjelling.jpg",
+    "desc": "Darjeeling is a town in India's West Bengal state, in the Himalayan foothills. Once a summer resort for the British Raj elite, it remains the terminus of the narrow-gauge Darjeeling Himalayan Railway, or “Toy Train,” completed in 1881. It's famed for the distinctive black tea grown on plantations that dot its surrounding slopes. Its backdrop is Mt. Kanchenjunga, among the world’s highest peaks."
   },
   {
-    "name": "Cherai Beach",
-    "price": "399",
-    "rating": "4.5",
+    "name": "Cherai Beach, Coachi",
+    "price": "19999",
+    "rating": "4.7",
     "persons": "2",
-    "days": "3",
-    "thumbnail": "https://lh3.googleusercontent.com/proxy/a91Vdw2t-4TMTs-G61hml4wKf02NTjYGMI_bh9hfyg4T4mTf_74zkYsJo7w-saKlUQHpI3z5GmxNpQWavXI0jiEHE11UEWolOEmZzGPsUOEMNRdOGpuo6D56awlW5MxSt5Ws1D1XVzgFQOSsWw",
-    "desc": "Goa is a state in western India with coastlines stretching along the Arabian Sea. Its long history as a Portuguese colony prior to 1961 is evident in its preserved 17th-century churches and the area’s tropical spice plantations. Goa is also known for its beaches, ranging from popular stretches at Baga and Palolem to those in laid-back fishing villages such as Agonda."
+    "days": "2",
+    "thumbnail": "https://i.ibb.co/17rMsJd/club-mahindra-cherai.jpg",
+    "desc": "Cherai Beach is a beach located in Cherai in the northern side of Vypin Island, a suburb of the city Kochi in the state of Kerala, India. One of the most visited beaches in the state, it is situated at around 25 km from downtown Kochi and 20 km from Cochin International Airport."
   },
   {
-    "name": "Manipur",
-    "price": "399",
-    "rating": "4.5",
+    "name": "Gangtok, Shikim City Of Cloud Trip",
+    "price": "15999",
+    "rating": "4.9",
     "persons": "2",
-    "days": "3",
-    "thumbnail": "https://lh3.googleusercontent.com/proxy/a91Vdw2t-4TMTs-G61hml4wKf02NTjYGMI_bh9hfyg4T4mTf_74zkYsJo7w-saKlUQHpI3z5GmxNpQWavXI0jiEHE11UEWolOEmZzGPsUOEMNRdOGpuo6D56awlW5MxSt5Ws1D1XVzgFQOSsWw",
-    "desc": "Goa is a state in western India with coastlines stretching along the Arabian Sea. Its long history as a Portuguese colony prior to 1961 is evident in its preserved 17th-century churches and the area’s tropical spice plantations. Goa is also known for its beaches, ranging from popular stretches at Baga and Palolem to those in laid-back fishing villages such as Agonda."
+    "days": "7",
+    "thumbnail": "https://i.ibb.co/TbkY7Rj/gantak.jpg",
+    "desc": "Gangtok is the capital of the mountainous northern Indian state of Sikkim. Established as a Buddhist pilgrimage site in the 1840s, the city became capital of an independent monarchy after British rule ended, but joined India in 1975. Today, it remains a Tibetan Buddhist center and a base for hikers organizing permits and transport for treks through Sikkim’s Himalayan mountain ranges."
   },
   {
-    "name": "TajMahal, Agra",
-    "price": "399",
-    "rating": "4.5",
+    "name": "Goa Sea Beach Tour",
+    "price": "17999",
+    "rating": "4.9",
     "persons": "2",
-    "days": "3",
-    "thumbnail": "https://lh3.googleusercontent.com/proxy/a91Vdw2t-4TMTs-G61hml4wKf02NTjYGMI_bh9hfyg4T4mTf_74zkYsJo7w-saKlUQHpI3z5GmxNpQWavXI0jiEHE11UEWolOEmZzGPsUOEMNRdOGpuo6D56awlW5MxSt5Ws1D1XVzgFQOSsWw",
-    "desc": "Goa is a state in western India with coastlines stretching along the Arabian Sea. Its long history as a Portuguese colony prior to 1961 is evident in its preserved 17th-century churches and the area’s tropical spice plantations. Goa is also known for its beaches, ranging from popular stretches at Baga and Palolem to those in laid-back fishing villages such as Agonda."
-  },
-  {
-    "name": "Delhi",
-    "price": "399",
-    "rating": "4.5",
-    "persons": "2",
-    "days": "3",
-    "thumbnail": "https://lh3.googleusercontent.com/proxy/a91Vdw2t-4TMTs-G61hml4wKf02NTjYGMI_bh9hfyg4T4mTf_74zkYsJo7w-saKlUQHpI3z5GmxNpQWavXI0jiEHE11UEWolOEmZzGPsUOEMNRdOGpuo6D56awlW5MxSt5Ws1D1XVzgFQOSsWw",
-    "desc": "Goa is a state in western India with coastlines stretching along the Arabian Sea. Its long history as a Portuguese colony prior to 1961 is evident in its preserved 17th-century churches and the area’s tropical spice plantations. Goa is also known for its beaches, ranging from popular stretches at Baga and Palolem to those in laid-back fishing villages such as Agonda."
+    "days": "5",
+    "thumbnail": "https://i.ibb.co/8PT5D6q/goa-sea-beach.jpg",
+    "desc": "The 100 kilometer coastline is dotted with as many as 35 beaches, many of them unique in various ways. Some of the beaches are very quiet and serene with swaying palm trees. They are great for a relaxing holiday, while others are busier stretches of sand. The beaches are the main attraction of Goa."
   }
 ]
