@@ -8,12 +8,14 @@
 
 #### Used Technologies:
 
-_^ React,
-_^ Firebase,
-_^ React router,
-_^ Node,
-_^ Express,
-_^ MongoDB
+    1. React,
+    2. React router,
+    2. TailWind CSS
+    3. React Bootstrap
+    4. Firebase,
+    5. Node,
+    6. Express,
+    7. MongoDB
 
 ### Purpose Of This Project:
 
