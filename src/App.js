@@ -7,6 +7,8 @@ import Home from './pages/Home/Home';
 import NotFound from './pages/NotFound/NotFound';
 import Footer from './shared/Footer/Footer';
 import Header from './shared/Header/Header';
+import Login from './shared/Login/Login';
+import Services from './shared/Services/Services';
 
 function App() {
   return (
@@ -21,11 +23,17 @@ function App() {
               <Route  path="/home">
                 <Home></Home>
               </Route>
+              <Route  path="/services">
+                <Services></Services>
+              </Route>
               <Route path="/contact">
                 <Contact></Contact>
               </Route>
               <Route path="/about">
                 <About></About>
+              </Route>
+              <Route path="/signin">
+                <Login></Login>
               </Route>
               <Route path="*">
                 <NotFound></NotFound>

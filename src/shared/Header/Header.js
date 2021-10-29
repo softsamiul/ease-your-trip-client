@@ -1,17 +1,18 @@
 import React from 'react';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import HeaderTop from '../HeaderTop/HeaderTop';
+import useFirebase from '../../hooks/useFirebase/useFirebase';
 
 const Header = () => {
+    const {user, logOut} = useFirebase();
     return (
         <div>
             <div className="mb-2">
-                <HeaderTop></HeaderTop>
+                {/* <HeaderTop></HeaderTop> */}
             </div>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Container>
-                    <Navbar.Brand href="#home">Ease Your Trip</Navbar.Brand>
+                    <Navbar.Brand as = {Link} to="/home">Ease Your Trip</Navbar.Brand>
                     {/* <span>Live free, live while</span> */}
             
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -27,12 +28,17 @@ const Header = () => {
                         </NavDropdown>
                         </Nav>
                         <Nav>
+                            <Nav.Link as = {Link} to="/signin">Sign In</Nav.Link>
+                            <Nav.Link onClick={logOut}>Sign Out</Nav.Link>
+                            <Nav.Link href="#deets">Dashboard</Nav.Link>
+                            <Nav.Link href="#deets">Profile</Nav.Link>
+                            <Nav.Link href="#deets">{user.displayName}</Nav.Link>
+                        </Nav>
                         {/* <Nav.Link href="#deets">Sign Out</Nav.Link>
                         <Nav.Link href="#deets">Jhon Doe</Nav.Link> */}
                         {/* <Nav.Link eventKey={2} href="#memes">
                             Dank memes
                         </Nav.Link> */}
-                        </Nav>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
