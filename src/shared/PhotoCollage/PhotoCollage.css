@@ -1,0 +1,23 @@
+.right-section {
+  height: 400px;
+}
+
+.height-100 {
+  height: 100px;
+}
+
+.height-300 {
+  height: 300px;
+}
+
+.height-400 {
+  height: 400px;
+}
+
+.width-fluid {
+  width: 100%;
+}
+
+img {
+  max-height: 100%;
+}

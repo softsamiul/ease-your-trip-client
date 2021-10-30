@@ -1,5 +1,6 @@
 import React from 'react';
 import useAuth from '../../hooks/useAuth/useAuth';
+import PhotoCollage from '../../shared/PhotoCollage/PhotoCollage';
 import Services from '../../shared/Services/Services';
 import Banner from './BannerSlider/Banner';
 
@@ -18,6 +19,8 @@ const Home = () => {
             <p className="w-2/5 border-b border-gray mx-auto" style={{marginBottom:"30px"}}></p>
                 <Services></Services>
             </div>
+
+            <PhotoCollage></PhotoCollage>
         </div>
     );
 };

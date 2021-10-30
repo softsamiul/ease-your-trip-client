@@ -26,7 +26,7 @@ const Service = ({service}) => {
                 <div>
                     <p className="text-justify">{desc.slice(0,150)}...</p>
                 </div>
-                <p className="text-2xl font-bold py-2"><i class="fas fa-rupee-sign"></i> {price}</p>
+                <p className="text-2xl font-bold py-2"><i className="fas fa-rupee-sign"></i> {price}</p>
             </div>
             <div className="grid grid-cols-2 gap-2">
             
