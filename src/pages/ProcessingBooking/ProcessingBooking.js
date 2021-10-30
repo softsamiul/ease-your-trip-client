@@ -45,6 +45,9 @@ const ProcessingBooking = () => {
                 <input className="border-2 border-gray d-block py-1 px-2 w-full my-2" defaultValue={user.email} {...register("email", { required: true })} readOnly/>
                 {/* Trip package name */}
                 <input className="border-2 border-gray d-block py-1 px-2 w-full my-2" defaultValue={service.name} {...register("tripPackageName", { required: true })} readOnly/>
+                {/* Sending status */}
+                <input  style={{display:"none"}} defaultValue={"Pending"} {...register("status", { required: true })}/>
+                
                 {/* City */}
                 <input className="border-2 border-gray d-block py-1 px-2 w-full" placeholder="City" {...register("city", { required: true})} required/>
                 {/* Area pincode */}
