@@ -14,7 +14,6 @@ const AddNewTrips = () => {
                 const url = '/home';
                 history.push(url);
             }
-            
         })
     };
     return (
