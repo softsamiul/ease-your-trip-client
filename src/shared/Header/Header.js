@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth/useAuth';
+import './Header';
 
 const Header = () => {
     const {user, logOut} = useAuth();
@@ -11,32 +12,33 @@ const Header = () => {
             <div className="mb-2">
                 {/* <HeaderTop></HeaderTop> */}
             </div>
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+            <Navbar collapseOnSelect expand="lg" className="bg-blue-800 text-white">
                 <Container>
-                    <Navbar.Brand as = {Link} to="/home">Ease Your Trip</Navbar.Brand>
+                    <Navbar.Brand as = {Link} className="text-white font-extrabold" to="/home">EaseYourTrip</Navbar.Brand>
                     {/* <span>Live free, live while</span> */}
             
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav text-white" />
                     <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="me-auto">
-                        <Nav.Link as = {Link} to="/home">Home</Nav.Link>
-                        <Nav.Link as = {Link} to="/services">Services</Nav.Link>
-                        <Nav.Link as = {Link} to="/contact">Contact</Nav.Link>
-                        <Nav.Link as = {Link} to="/about">About</Nav.Link>
+                        <Nav className="me-auto text-white">
+                        <Nav.Link as = {Link} className="text-white" to="/home">Home</Nav.Link>
+                        <Nav.Link as = {Link} className="text-white" to="/services">Services</Nav.Link>
+                        <Nav.Link as = {Link} className="text-white" to="/contact">Contact</Nav.Link>
+                        <Nav.Link as = {Link} className="text-white" to="/about">About</Nav.Link>
                         
                         </Nav>
-                        <Nav style={{alignItems:"center"}}>
+                        <Nav style={{alignItems:"center", color:"white !important"}}>
                             {/* Sign in or Sign out btn */}
-                            {user.email || user.displayName ? <Nav.Link onClick={logOut}>Sign Out</Nav.Link> : <Nav.Link as = {Link} to="/signin">Sign In</Nav.Link> }
-    
-                            {user.email || user.displayName ? <NavDropdown title="DashBoard" id="collasible-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1">Dashboard</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">My Trips</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Manage All Trips</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.4">Add New Trip</NavDropdown.Item>
-                            </NavDropdown> : ""}
-                            <Nav.Link href="#deets">{user.displayName}</Nav.Link>
-                            <Nav.Link href="#deets"><img src={user.photoURL} className="w-12 h-12 rounded-circle" alt="img" /></Nav.Link>
+                            {user.email || user.displayName ? <Nav.Link as = {Link} to="/home" onClick={logOut} className="text-white">Sign Out</Nav.Link> : <Nav.Link as = {Link} className="text-white" to="/signin">Sign In</Nav.Link> }
+                            
+                            <Nav.Link className="text-white" >{user.displayName}</Nav.Link>
+                            <button className="bg-gray-100">
+                                {user.email || user.displayName ? <NavDropdown title="Dashboard" id="collasible-nav-dropdown" className="text-white" >
+                                    <NavDropdown.Item >Dashboard</NavDropdown.Item>
+                                    <NavDropdown.Item ><Link to="/mytrips">My Trips</Link></NavDropdown.Item>
+                                    <NavDropdown.Item ><Link to="/managealltrips">Manage All Trips</Link></NavDropdown.Item>
+                                    <NavDropdown.Item ><Link to="/addnewtrip">Add New Trip</Link></NavDropdown.Item>
+                                </NavDropdown> : ""}
+                            </button>
                         </Nav>
                         {/* <Nav.Link href="#deets">Sign Out</Nav.Link>
                         <Nav.Link href="#deets">Jhon Doe</Nav.Link> */}
