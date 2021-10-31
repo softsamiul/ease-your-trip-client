@@ -34,7 +34,6 @@ const Header = () => {
                             {/* <Nav.Link className="text-white" >{user.email}</Nav.Link> */}
                             <button className="bg-gray-100">
                                 {user.email || user.displayName ? <NavDropdown title="Dashboard" id="collasible-nav-dropdown" className="text-white" >
-                                    <NavDropdown.Item >Dashboard</NavDropdown.Item>
                                     <NavDropdown.Item ><Link to="/mytrips">My Trips</Link></NavDropdown.Item>
                                     <NavDropdown.Item ><Link to="/managealltrips">Manage All Trips</Link></NavDropdown.Item>
                                     <NavDropdown.Item ><Link to="/addnewtrip">Add New Trip</Link></NavDropdown.Item>
