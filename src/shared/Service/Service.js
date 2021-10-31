@@ -16,7 +16,7 @@ const Service = ({service}) => {
             <div>
                 <img src={thumbnail} className="img-fluid rounded-lg" style={{height:"272px"}} alt="" />
             </div>
-            <div style={{height:"190px"}}>
+            <div class="pacakge-fix">
                 <h2 className="text-2xl mt-2 font-base">{name}</h2>
                 <div className="grid grid-cols-3 gap-3 py-1 my-1">
                     <p><i className="fas fa-user-friends"></i> {persons} Persons</p>
@@ -31,10 +31,10 @@ const Service = ({service}) => {
             <div className="grid grid-cols-2 gap-2">
             
                 <Link to={`/servicedetails/${_id}`} >
-                    <button className="bg-indigo-500 w-full py-1 px-6 text-white font-bold">Details</button>
+                    <button className="bg-blue-500 w-full py-1 px-6 text-white font-bold">Details</button>
                 </Link>
                 <Link to={`/processbooking/${_id}`}>
-                    <button className="bg-indigo-500 w-full py-1 px-6 text-white font-bold">Book Now</button>
+                    <button className="bg-yellow-500 w-full py-1 px-6 text-white font-bold">Book Now</button>
                 </Link>
                 
                 
