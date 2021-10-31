@@ -5,10 +5,15 @@ import SingleTrip from './SingleTrip/SingleTrip';
 const ManageAllTrips = () => {
     const [trips, setTrips] = useState([]);
     const [update, setUpdate] = useState('');
+    const [preloader, setPreloader] = useState(true)
     useEffect(()=>{
+        setPreloader(true)
         fetch('https://wicked-cemetery-44199.herokuapp.com/orders')
         .then(res=>res.json())
-        .then(trip => setTrips(trip))
+        .then(trip => {
+            setTrips(trip)
+            setPreloader(false)
+        })
     },[update])
 
     // Handle pending/approve function
@@ -55,6 +60,10 @@ const ManageAllTrips = () => {
     //         }
     //     })
     // }
+
+    if(preloader){
+        return <img className="w-24 h-24 mx-auto" src="https://i.ibb.co/rxHTDRt/preloader.gif" alt="" />
+    }
 
     return (
         <div>

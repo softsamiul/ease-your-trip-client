@@ -10,11 +10,11 @@ import MyTrips from './pages/MyTrips/MyTrips';
 import NotFound from './pages/NotFound/NotFound';
 import ProcessingBooking from './pages/ProcessingBooking/ProcessingBooking';
 import ServiceDetails from './pages/ServiceDetails/ServiceDetails';
+import Services from './pages/Services/Services';
 import Footer from './shared/Footer/Footer';
 import Header from './shared/Header/Header';
 import Login from './shared/Login/Login';
 import PrivateRoute from './shared/PrivateRoute/PrivateRoute';
-import Services from './shared/Services/Services';
 
 function App() {
   return (

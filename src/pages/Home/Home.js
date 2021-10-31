@@ -6,8 +6,9 @@ import Banner from './BannerSlider/Banner';
 
 const Home = () => {
     const {user, signInUsingGoogle, isLoading} = useAuth();
-
     const [preloader, setPreloader] = useState(true);
+
+    // console.log(window.onload());
     
     return (
         <div>
