@@ -6,7 +6,7 @@ import './Header';
 
 const Header = () => {
     const {user, logOut} = useAuth();
-    console.log(user)
+
     return (
         <div>
             <div className="mb-2">
@@ -14,7 +14,7 @@ const Header = () => {
             </div>
             <Navbar collapseOnSelect expand="lg" className="bg-blue-800 text-white">
                 <Container>
-                    <Navbar.Brand as = {Link} className="text-white font-extrabold" to="/home">EaseYourTrip</Navbar.Brand>
+                    <Navbar.Brand as = {Link} className="text-white font-extrabold" to="/home"><i className="fas fa-meteor mr-1"></i> EaseYourTrip</Navbar.Brand>
                     {/* <span>Live free, live while</span> */}
             
                     <Navbar.Toggle aria-controls="responsive-navbar-nav text-white" />
@@ -31,6 +31,7 @@ const Header = () => {
                             {user.email || user.displayName ? <Nav.Link as = {Link} to="/home" onClick={logOut} className="text-white">Sign Out</Nav.Link> : <Nav.Link as = {Link} className="text-white" to="/signin">Sign In</Nav.Link> }
                             
                             <Nav.Link className="text-white" >{user.displayName}</Nav.Link>
+                            {/* <Nav.Link className="text-white" >{user.email}</Nav.Link> */}
                             <button className="bg-gray-100">
                                 {user.email || user.displayName ? <NavDropdown title="Dashboard" id="collasible-nav-dropdown" className="text-white" >
                                     <NavDropdown.Item >Dashboard</NavDropdown.Item>

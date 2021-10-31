@@ -10,7 +10,7 @@ const ProcessingBooking = () => {
     const history = useHistory();
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        axios.post('http://localhost:7000/orders',data)
+        axios.post('https://wicked-cemetery-44199.herokuapp.com/orders',data)
         .then(response => {
             console.log(response);
             if(response.data.insertedId){
@@ -21,8 +21,10 @@ const ProcessingBooking = () => {
         })
     };
 
+    console.log(user)
+
     const [service, setService] = useState([])
-    const url = `http://localhost:7000/trips/${id}`;
+    const url = `https://wicked-cemetery-44199.herokuapp.com/trips/${id}`;
     useEffect(()=>{
         fetch(url)
         .then(res=>res.json())

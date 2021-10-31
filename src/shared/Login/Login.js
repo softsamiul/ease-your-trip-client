@@ -1,28 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { NavLink, useHistory, useLocation } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth/useAuth';
 const Login = () => {
+    const [loginError, setLoginError] = useState('');
+    const {signInUsingGoogle, setIsloading} = useAuth();
     const { register, handleSubmit, formState: { errors } } = useForm();
     const history = useHistory();
     const location = useLocation();   
     const redirect_uri = location.state?.from || '/home';
 
+    console.log(redirect_uri);
+    
+
     const signIn = () => {
         signInUsingGoogle()
         .then(result => {
             history.push(redirect_uri);
-        })
+        }).catch(error=>{
+
+        }).finally(() => setIsloading(false))
     }
 
-    const {signInUsingGoogle} = useAuth();
+    
     const onSubmit = data => {
         const {email, password} = data;
         console.log(data);
         
     };
     return (
-        <div className="flex flex-col md:flex-row items-center w-11/12 mx-auto">
+        <div className="flex flex-col md:flex-row items-center w-11/12 mx-auto my-20">
+            <div className="w-3/5 hidden md:block">
+                <div className="w-3/5 mx-auto">
+                    <img src="https://i.ibb.co/jfJbpz5/signin.png" alt="" />
+                </div>
+            </div>
             <div className="md:w-2/5 w-11/12 form-design text-left block">
                 <div className="md:w-3/5 w-full mx-auto">
                     <h2 className="text-3xl font-medium login-header">Login</h2>
@@ -50,17 +62,13 @@ const Login = () => {
                     <p className="text-center">--------- or ---------</p>
                     <div>
                         <div className="flex items-center justify-center border border-1-blue p-1 text-center cursor-pointer" >
-                            {/* <img className="w-5 h-5 text-right" src={googleIcon} alt="" />  */}
+                            <img className="w-5 h-5 text-right" src="https://i.ibb.co/KwpqHF4/google-icon.png" alt="" /> 
                             <button onClick={signIn} className=" text-left text-lg font-base ml-1.5">Sign In</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="w-3/5 hidden md:block">
-                <div className="w-3/5 mx-auto">
-                    {/* <img src={LoginImg} alt="" /> */}
-                </div>
-            </div>
+            
         </div>
     );
 };

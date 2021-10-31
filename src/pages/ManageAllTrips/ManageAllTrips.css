@@ -1,0 +1,9 @@
+@media (max-width: 678px) {
+  table {
+    overflow-x: scroll;
+  }
+}
+
+table {
+  display: none;
+}

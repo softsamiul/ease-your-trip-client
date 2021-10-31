@@ -1,11 +1,13 @@
 import React from 'react';
+import useAuth from '../../hooks/useAuth/useAuth';
 import useServices from '../../hooks/useServices';
 import Service from '../Service/Service';
 
 const Services = () => {
     const {services, setServices} = useServices();
+    const {user} = useAuth();
     // useEffect(()=>{
-    //     fetch('http://localhost:7000/trips')
+    //     fetch('https://wicked-cemetery-44199.herokuapp.com/trips')
     //     .then(res=>res.json())
     //     .then(data=>setServices(data))
     // },[])

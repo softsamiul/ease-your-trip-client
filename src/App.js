@@ -47,15 +47,15 @@ function App() {
               <Route path="/signin">
                 <Login></Login>
               </Route>
-              <Route path="/mytrips">
+              <PrivateRoute path="/mytrips">
                 <MyTrips></MyTrips>
-              </Route>
-              <Route path="/managealltrips">
+              </PrivateRoute>
+              <PrivateRoute path="/managealltrips">
                 <ManageAllTrips></ManageAllTrips>
-              </Route>
-              <Route path="/addnewtrip">
+              </PrivateRoute>
+              <PrivateRoute path="/addnewtrip">
                 <AddNewTrips></AddNewTrips>
-              </Route>
+              </PrivateRoute>
               <Route path="*">
                 <NotFound></NotFound>
               </Route>

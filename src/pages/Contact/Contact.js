@@ -12,7 +12,7 @@ const Contact = () => {
             <div className="md:w-2/4 w-full text-left">
                 <div className="md:w-3/5 w-full mx-auto"> 
                     <h2 className="text-2xl font-medium uppercase">Contact Us</h2>
-                    <p className="text-gray-700">New Town, Kolkata, West Bengal, 700035, India <br /> Phone: +91 2341243290 <br/> Email: medicare@info.com </p>
+                    <p className="text-gray-700">New Town, Kolkata, West Bengal, 700035, India <br /> Phone: +91 2341243290 <br/> Email: easemytrip@info.com </p>
 
                     <h2 className="text-2xl font-medium my-4">Drop your words here!</h2>
                     <div className="mt-2">

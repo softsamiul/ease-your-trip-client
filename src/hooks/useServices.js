@@ -3,10 +3,10 @@ import { useEffect, useState } from "react";
 const useServices = () =>{
     const [services, setServices] = useState([])
     useEffect(()=>{
-        const url = `http://localhost:7000/trips`;
+        const url = `https://wicked-cemetery-44199.herokuapp.com/trips`;
         fetch(url)
         .then(res=>res.json())
-        .then(data=>setServices(data))
+        .then(data=> setServices(data))
     },[])
 
     return {

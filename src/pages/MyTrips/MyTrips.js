@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import { Table } from 'react-bootstrap';
 import useAuth from '../../hooks/useAuth/useAuth';
 
 const MyTrips = () => {
     const {user} = useAuth();
     const [trips, setTrips] = useState([]);
     useEffect(()=>{
-        fetch('http://localhost:7000/orders')
+        fetch('https://wicked-cemetery-44199.herokuapp.com/orders')
         .then(res=>res.json())
         .then(trip => setTrips(trip))
     },[])
@@ -15,7 +16,38 @@ const MyTrips = () => {
         <div>
             <h2>My Trips</h2>
 
-            <div>
+            <Table responsive>
+                <thead>
+                    <tr>
+                    <th>#</th>
+                    {Array.from({ length: 12 }).map((_, index) => (
+                        <th key={index}>Table heading</th>
+                    ))}
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>1</td>
+                    {Array.from({ length: 12 }).map((_, index) => (
+                        <td key={index}>Table cell {index}</td>
+                    ))}
+                    </tr>
+                    <tr>
+                    <td>2</td>
+                    {Array.from({ length: 12 }).map((_, index) => (
+                        <td key={index}>Table cell {index}</td>
+                    ))}
+                    </tr>
+                    <tr>
+                    <td>3</td>
+                    {Array.from({ length: 12 }).map((_, index) => (
+                        <td key={index}>Table cell {index}</td>
+                    ))}
+                    </tr>
+                </tbody>
+            </Table>
+
+            {/* <div>
                 {
                     myOrders.map(myOrder => <div>
 
@@ -23,7 +55,7 @@ const MyTrips = () => {
                         <p>{myOrder.tripPackageName}</p>
                     </div>)
                 }
-            </div>
+            </div> */}
         </div>
     );
 };

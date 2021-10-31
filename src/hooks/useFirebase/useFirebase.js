@@ -4,13 +4,15 @@ import firebaseInitApp from "../../shared/firebase/firebase.init";
 
 firebaseInitApp();
 const useFirebase = () => {
+    const [isLoading, setIsloading] = useState(true);
+    const [preloader, setPreloader] = useState(undefined);
     const [user, setUser] = useState({});
 
     const auth = getAuth();
 
     
     const signInUsingGoogle = () => {
-        
+        setIsloading(true)
         const googleProvider = new GoogleAuthProvider();
 
         return signInWithPopup(auth, googleProvider)
@@ -19,7 +21,7 @@ const useFirebase = () => {
 
     // get current user
     useState(()=>{
-        onAuthStateChanged(auth, (user) => {
+      const unsubscribed = onAuthStateChanged(auth, (user) => {
             if (user) {
               setUser(user)
               // ...
@@ -27,23 +29,30 @@ const useFirebase = () => {
               // User is signed out
               // ...
             }
+            setIsloading(false);
           });
+        return () => unsubscribed;
     },[])
 
      // handling Log out 
      const logOut = () => {
+      setIsloading(true)
       signOut(auth).then(() => {
           // Sign-out successful.
           setUser({})
       }).catch((error) => {
           // An error happened.
-      })
+      }).finally(() => setIsloading(false))
     }
 
     return {
         signInUsingGoogle,
         user,
-        logOut
+        logOut,
+        isLoading,
+        setIsloading,
+        preloader,
+        setPreloader
     }
 }
 

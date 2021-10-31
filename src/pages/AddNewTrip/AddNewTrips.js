@@ -7,7 +7,7 @@ const AddNewTrips = () => {
     const history = useHistory();
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        axios.post('http://localhost:7000/trips',data)
+        axios.post('https://wicked-cemetery-44199.herokuapp.com/trips',data)
         .then(response => {
             console.log(response);
             if(response.data.insertedId){

@@ -1,15 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import useAuth from '../../hooks/useAuth/useAuth';
 import PhotoCollage from '../../shared/PhotoCollage/PhotoCollage';
 import Services from '../../shared/Services/Services';
 import Banner from './BannerSlider/Banner';
 
 const Home = () => {
-    const {user, signInUsingGoogle} = useAuth();
+    const {user, signInUsingGoogle, isLoading} = useAuth();
+
+    const [preloader, setPreloader] = useState(true);
+    
     return (
         <div>
             
-            {/* <button className="my-5" onClick={signInUsingGoogle}>Google sign in</button> */}
             {/* Banner start */}
             <Banner></Banner>
 
@@ -19,8 +21,11 @@ const Home = () => {
             <p className="w-2/5 border-b border-gray mx-auto" style={{marginBottom:"30px"}}></p>
                 <Services></Services>
             </div>
-
+            {/* Photo collage */}
             <PhotoCollage></PhotoCollage>
+
+
+
         </div>
     );
 };

@@ -4,7 +4,7 @@ import { useParams } from 'react-router';
 const ServiceDetails = () => {
     const {id} = useParams();
     const [service, setService] = useState([])
-    const url = `http://localhost:7000/trips/${id}`;
+    const url = `https://wicked-cemetery-44199.herokuapp.com/trips/${id}`;
     useEffect(()=>{
         fetch(url)
         .then(res=>res.json())
