@@ -21,8 +21,6 @@ const ProcessingBooking = () => {
         })
     };
 
-    console.log(user)
-
     const [service, setService] = useState([])
     const url = `https://wicked-cemetery-44199.herokuapp.com/trips/${id}`;
     useEffect(()=>{
@@ -37,8 +35,8 @@ const ProcessingBooking = () => {
         <div>
             <h2 className="text-3xl font-medium my-8">Process booking</h2>
             <div>
-                <p>Welcome {user.displayName}</p>
-                <p>You are applying for {service.name}</p>
+                <h2 className="text-xl font-medium">Welcome {user.displayName}</h2>
+                <p className="text-base font-medium">You are Booking for {service.name}</p>
             </div>
             <div>
 
