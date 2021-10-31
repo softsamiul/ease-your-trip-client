@@ -46,7 +46,7 @@ const ProcessingBooking = () => {
                         <div>
                             <img src={thumbnail} className="img-fluid rounded-lg" style={{height:"272px"}} alt="" />
                         </div>
-                        <div class="pacakge-fix">
+                        <div className="pacakge-fix">
                             <h2 className="text-2xl mt-2 font-base">{name}</h2>
                             <div className="grid grid-cols-3 gap-3 py-1 my-1">
                                 <p><i className="fas fa-user-friends"></i> {persons} Persons</p>

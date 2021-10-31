@@ -11,7 +11,7 @@ const Footer = () => {
                     {/* Footer services navigation */}
                     {/* About Ease my Trip */}
                     <div className="text-left">
-                        <h2 className="text-lg font-bold mb-2">EASEMYTRIP</h2>
+                        <h2 className="text-lg font-bold mb-2">EASEYOURTRIP</h2>
                         <p>Ese My Trip is an Indian online travel company founded in 2021. Headquartered in Newtown, Kolkata. The company provides online travel services including flight tickets, domestic and international holiday packages, hotel reservations, rail, and bus tickets.</p>
                     </div>
                     {/* Our Services  */}
